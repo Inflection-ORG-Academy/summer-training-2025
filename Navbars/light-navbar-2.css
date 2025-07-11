@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+header{
+    border-bottom: 1px solid black;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: white;
+}
+
+header nav a{
+    text-decoration-line: none;
+}
+header nav button{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 8px 12px;
+}
+
+.active-btn{
+    background-color: black;
+    color: white;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}

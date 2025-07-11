@@ -1,0 +1,100 @@
+/* {
+
+    color : #8B302D
+    background-color: #8D2C22
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #ffffff
+    shadow-color : rgba(0, 0, 0, 0.25)
+} */
+
+/* Reseting default margin, padding and border box */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+body{
+    background-image: url('assets/threeTree.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+}
+
+body > section{
+    background-image: url('assets/twoZoomTree.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    color:#8B302D ;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+input{
+    border: none;
+    background-color: white;
+    padding: 12px;
+    border-radius: 6px;
+    color: #8B302D;
+    outline: none;
+    font-size: 20px;
+}
+
+/* Psudo Class Selector */
+input:focus{
+    border: 2px solid #8D2C22;
+}
+
+/* Psudo Element Selector */
+input::placeholder{
+    color: #8B302D;
+}
+
+section form{
+    background-color: rgba(255, 255, 255, 0.30);
+    max-width: 420px;
+    width: 90%;
+    padding: 36px;
+    box-shadow:4px 9px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+
+#input-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 36px;
+}
+
+#input-fields p{
+    display: flex;
+    justify-content: space-between;
+}
+
+#input-fields a{
+    color: #8B302D;
+    text-decoration-line: none;
+}
+
+.login-btn{
+    background-color: #8D2C22;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 500;
+}
