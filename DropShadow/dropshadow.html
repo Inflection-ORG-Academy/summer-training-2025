@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drop Shadow</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: black;
+      }
+
+      img {
+        filter: grayscale(100%) drop-shadow(0 0 0px transparent);
+        transition-delay: 2s;
+        transition-duration: 3s;
+      }
+
+      img:hover {
+        filter: grayscale(0%) drop-shadow(-20px -20px 50px red);
+        /* filter: grayscale(0%); */
+      }
+    </style>
+  </head>
+  <body>
+    <img src="holloween.png" height="400" />
+  </body>
+</html>
