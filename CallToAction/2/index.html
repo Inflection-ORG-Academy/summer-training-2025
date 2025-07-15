@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call To Action</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      body {
+        padding: 24px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      #call-to-action {
+        height: 350px;
+        background-image: url("assets/svg.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom right;
+        background-color: rgb(0, 0, 55);
+        color: white;
+        display: flex;
+        align-items: center;
+        border-radius: 36px;
+      }
+
+      #call-to-action div {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-left: 48px;
+      }
+
+      button {
+        width: 150px;
+        background-color: rgb(38, 0, 255);
+        padding: 12px 36px;
+        border-radius: 999px;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        margin-top: 20px;
+        transition-duration: 1s;
+        white-space: nowrap;
+        animation-name: bounce;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes bounce {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="call-to-action">
+      <div>
+        <h1>Experience first-hand</h1>
+        <p>Why read so much? just Code</p>
+        <button>Join us</button>
+      </div>
+    </section>
+  </body>
+</html>
